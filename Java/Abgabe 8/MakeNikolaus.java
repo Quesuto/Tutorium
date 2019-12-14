@@ -12,8 +12,9 @@ public class MakeNikolaus {
         // ////////////////////////////////////////////////////
 
         // Pfad zur Bilddatei:
-        String path = "D:/OneDrive - Universität Münster/Unizeugs/Tutor/Info1_2019.20/Abgaben/Java/8";
+        String path = System.getProperty("user.dir") + "/Java/Abgabe 8"; // Sucht euch den Path der Datei raus.
         String filename = path + "/Nikolaus.jpg";
+        System.out.println(filename);
 
         // ////////////////////////////////////////////////////
         // Folgenden Code bitte VOR den Aufgaben b),c),d) stehen lassen
@@ -28,9 +29,8 @@ public class MakeNikolaus {
         // Lies Bildgröße aus:
         int width = img.getWidth(); // 300px
         int height = img.getHeight(); // 600px
-        int gradient = 0;
 
-        ///////////////////////////////////////////////////////////////////////
+        /////////////////////////// AUFGABEN ///////////////////////////////
         // b)
         for (int x = 0; x < width; x++) {
             for (int y = 0; y < height; y++) {
@@ -55,7 +55,6 @@ public class MakeNikolaus {
             }
 
         }
-
 
         ///////////////////////////////////////////////////////////////////////
 
